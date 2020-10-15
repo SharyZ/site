@@ -24,7 +24,7 @@
         <img
           class="object-cover object-center rounded"
           alt="hero"
-          src="/Business_SVG.svg"
+          :src="require('~/assets/Business_SVG.svg')"
         />
       </div>
     </Container>
