@@ -22,6 +22,11 @@ module.exports = {
       current: 'currentColor',
       black: '#000',
       white: '#fff',
+      primary: 'rgb(25, 91, 255)',
+      success: 'rgb(23, 201, 100)',
+      danger: 'rgb(255, 71, 87)',
+      warning: 'rgb(255, 186, 0)',
+      dark: 'rgb(30, 30, 30)',
       gray: {
         100: '#f7fafc',
         200: '#edf2f7',
