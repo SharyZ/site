@@ -24,10 +24,14 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['vuesax/dist/vuesax.css', '~/assets/css/style.scss'],
+  css: [
+    'vuesax/dist/vuesax.css',
+    '~/assets/css/style.scss',
+    'boxicons/css/boxicons.min.css',
+  ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['@/plugins/vuesax'],
+  plugins: ['@/plugins/vuesax', '@/plugins/boxicons.js'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
