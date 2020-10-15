@@ -4,10 +4,14 @@
       <div
         class="lg:flex-grow md:w-1/2 lg:pr-20 md:pr-12 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
       >
-        <h2 class="mb-4 leading-none uppercase">
+        <h2
+          class="mb-4 leading-none uppercase"
+          data-scroll
+          data-scroll-speed="1"
+        >
           Jamoatchilik tashabbuslari yagona platformasi
         </h2>
-        <p class="mb-8 leading-relaxed">
+        <p class="mb-8 leading-relaxed" data-scroll data-scroll-speed="1">
           Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
           plant cold-pressed tacos poke beard tote bag. Heirloom echo park
           mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon
@@ -20,11 +24,17 @@
           </vs-button>
         </div>
       </div>
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <div
+        class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
+        data-scroll
+        data-scroll-speed="1.5"
+      >
         <img
           class="object-cover object-center rounded"
           alt="hero"
           :src="require('~/assets/Business_SVG.svg')"
+          data-scroll
+          data-scroll-speed="2"
         />
       </div>
     </Container>
