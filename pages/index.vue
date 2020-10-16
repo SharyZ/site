@@ -1,7 +1,8 @@
 <template>
   <main data-scroll-container>
     <HomeHero data-scroll-section />
-    <HomeCategories />
+    <HomeCategories data-scroll-section />
+    <HomePetitions data-scroll-section />
   </main>
 </template>
 
