@@ -1,5 +1,11 @@
 <template>
-  <vs-navbar padding-scroll fixed shadow-scroll center-collapsed>
+  <vs-navbar
+    v-model="activePage"
+    padding-scroll
+    fixed
+    shadow-scroll
+    center-collapsed
+  >
     <template #left>
       <NuxtLink to="/">
         <img
@@ -9,11 +15,26 @@
         />
       </NuxtLink>
     </template>
-    <vs-navbar-item to="/">Barcha murojaatlar</vs-navbar-item>
-    <vs-navbar-item to="/">Bu qanday ishlaydi</vs-navbar-item>
-    <vs-navbar-item to="/">Bu qanday ishlaydi</vs-navbar-item>
-    <vs-navbar-item to="/">Portal haqida</vs-navbar-item>
-    <vs-navbar-item to="/">Kop beriladigan savollar</vs-navbar-item>
+    <vs-navbar-item
+      id="petitions"
+      :active="activePage == 'petitions'"
+      to="/petitions"
+    >
+      Barcha murojaatlar
+    </vs-navbar-item>
+    <vs-navbar-item
+      id="howItWorks"
+      :active="activePage == 'howItWorks'"
+      to="/how-it-works"
+    >
+      Bu qanday ishlaydi
+    </vs-navbar-item>
+    <vs-navbar-item id="about" :active="activePage == 'about'" to="/about">
+      Portal haqida
+    </vs-navbar-item>
+    <vs-navbar-item id="faq" :active="activePage == 'faq'" to="/faq">
+      Kop beriladigan savollar
+    </vs-navbar-item>
     <template #right>
       <vs-select v-model="selectedLanguage" placeholder="O'zbekcha">
         <vs-option label="O'zbekcha" value="uz">
@@ -38,6 +59,7 @@ export default {
   data() {
     return {
       selectedLanguage: '',
+      activePage: '',
     }
   },
 }
