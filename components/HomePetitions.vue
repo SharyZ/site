@@ -1,7 +1,7 @@
 <template>
   <section class="py-10">
     <div class="mb-5">
-      <h2 data-scroll class="section-title">Yangi jamoaviy murojaatlar</h2>
+      <h2 class="section-title">Yangi jamoaviy murojaatlar</h2>
       <petitions-list>
         <petitions-list-item
           v-for="petition in lastPetitions"
@@ -19,7 +19,7 @@
       </petitions-list>
     </div>
     <div class="mb-5">
-      <h2 data-scroll class="section-title">Ommabop jamoaviy murojaatlar</h2>
+      <h2 class="section-title">Ommabop jamoaviy murojaatlar</h2>
       <PetitionsList>
         <PetitionsListItem
           v-for="petition in popularPetitions"
@@ -37,7 +37,7 @@
       </PetitionsList>
     </div>
     <div class="mb-5">
-      <h2 data-scroll class="section-title">Ko'rib chiqish jarayonida</h2>
+      <h2 class="section-title">Ko'rib chiqish jarayonida</h2>
       <PetitionsList>
         <PetitionsListItem
           v-for="petition in underConsiderationPetitions"
@@ -55,9 +55,7 @@
       </PetitionsList>
     </div>
     <div class="mb-5">
-      <h2 data-scroll class="section-title">
-        Ko'rib chiqilgan jamoaviy murojaatlar
-      </h2>
+      <h2 class="section-title">Ko'rib chiqilgan jamoaviy murojaatlar</h2>
       <PetitionsList>
         <PetitionsListItem
           v-for="petition in reviewedPetitions"
