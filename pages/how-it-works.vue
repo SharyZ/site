@@ -51,7 +51,7 @@
         </p>
       </div>
     </div>
-    <div-section class="flex items-center justify-center my-24">
+    <div class="flex items-center justify-center my-24">
       <div class="w-1/3 px-5">
         <img
           :src="require('~/assets/how-it-works/undraw_like_dislike.svg')"
@@ -74,7 +74,7 @@
           numquam quas distinctio!
         </p>
       </div>
-    </div-section>
+    </div>
     <div class="flex flex-row-reverse items-center justify-center my-24">
       <div class="w-1/3 px-5">
         <img
