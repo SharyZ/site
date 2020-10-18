@@ -56,12 +56,11 @@
         <img src="/flags/flag-of-uzbekistan.svg" alt="O'zbekcha" width="25px" />
       </vs-button>
 
-      <vs-button icon flat dark size="large" :to="localePath('/log-in')">
+      <vs-button flat dark size="large" :to="localePath('/log-in')">
         <i class="bx bx-log-in bx-sm mr-1"></i>
         {{ $t('nav.login') }}
       </vs-button>
       <vs-button
-        icon
         gradient
         color="danger"
         size="large"
