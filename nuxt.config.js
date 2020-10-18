@@ -49,6 +49,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'nuxt-i18n',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -59,5 +60,17 @@ export default {
 
   tailwindcss: {
     configPath: '~/tailwind.config.js',
+  },
+
+  i18n: {
+    locales: [
+      { code: 'uz', iso: 'uz-UZ', file: 'uz.js' },
+      { code: 'ru', iso: 'ru-RU', file: 'ru.js' },
+    ],
+    defaultLocale: 'uz',
+    strategy: 'prefix_except_default',
+    seo: false,
+    lazy: true,
+    langDir: 'i18n/',
   },
 }
