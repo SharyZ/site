@@ -7,4 +7,15 @@ export default {
     login: 'Войти',
     signup: 'Зарегестрироваться',
   },
+  allPetitionsPage: {
+    title: 'Все обращения',
+    sidebar: {
+      all: 'Все',
+      popular: 'Популярные',
+      discussing: 'В процессе голосования',
+      underConsideration: 'На рассмотрении',
+      expired: 'Недостаточно голосов',
+      answered: 'Рассмотрено',
+    },
+  },
 }
