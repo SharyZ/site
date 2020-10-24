@@ -19,8 +19,4 @@ export const mutations = {
   },
 }
 
-export const getters = {
-  getPopularPetitions(state) {
-    return state.allPetitions.sort((a, b) => b.like - a.like)
-  },
-}
+export const getters = {}
