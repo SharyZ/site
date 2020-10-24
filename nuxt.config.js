@@ -53,7 +53,9 @@ export default {
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    baseURL: 'https://api.igov.uz/',
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
