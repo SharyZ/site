@@ -2,7 +2,9 @@
   <div class="petitions-list-item mb-8">
     <span class="category">{{ category }}</span>
     <h3 class="title">
-      <NuxtLink to="/">{{ title }}</NuxtLink>
+      <NuxtLink :to="localePath(`/petitions/${id}`)">
+        {{ title }}
+      </NuxtLink>
     </h3>
     <p class="description">{{ description }}</p>
     <div class="panel">
